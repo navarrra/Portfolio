@@ -1,0 +1,311 @@
+html{
+  background-color: #f7f7f7;
+}
+/**************************
+        Home Page
+**************************/
+
+.home{
+  background-repeat: no-repeat;
+  background-image: url("C:/Users/navarrra/Documents/GitHub/Portfolio/portfolio_photos/home_background.jpeg");
+  background-size:contain;
+  height: 320px;
+  position: relative;
+  margin-top: -1.3em;
+  width: 100%;
+  background-attachment: fixed;
+}
+
+.title{
+  position: relative;
+  text-align: center;
+  color: white;
+  padding-top: 3em;
+}
+
+.subtitle{
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color:red;
+  margin-top: -1em;
+}
+
+/**************************
+        nav menu
+**************************/
+
+.navbtn{
+  background-image: url("C:/Users/navarrra/Documents/GitHub/Portfolio/portfolio_photos/hamburger_icon.png");
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin:.5em;
+  position:fixed;
+  z-index: 2;
+}
+
+ .nav li a{
+  color: white;
+  text-decoration: none;
+}
+
+ul.nav{
+  list-style-type: none;
+  display: none;
+}
+
+/**************************
+        About
+**************************/
+
+.about{
+  background-color: #f7f7f7;
+  position: relative;
+  height: 700px;
+  margin-top: -2em;
+  padding-top:1em;
+}
+
+.header_title{
+  text-align: center;
+  border-bottom: solid red;
+  margin-right: 2em;
+  margin-left: 2em;
+  padding-bottom: .5em;
+  font-size: 23px;
+}
+
+p.aboutinfo{
+  font-size: 22px;
+  margin: 20px 8% 20px 18%;
+}
+
+.aboutgal{
+  display: flex;
+  padding: 2em 0;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.aboutimg{
+  width: 100px;
+  height: 100px;
+}
+
+.pic1{
+  background-image: url("C:/Users/navarrra/Documents/GitHub/Portfolio/portfolio_photos/html.png");
+  background-size: contain;
+}
+
+.pic2{
+  background-image: url("C:/Users/navarrra/Documents/GitHub/Portfolio/portfolio_photos/css.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.pic3{
+  background-image: url("C:/Users/navarrra/Documents/GitHub/Portfolio/portfolio_photos/js-logo.png");
+  background-size: contain;
+}
+
+/**************************
+        Projects
+**************************/
+
+.projects{
+  background-color: grey;
+  position: relative;
+  width: 100%;
+  height:700px;
+  background-image: url("C:/Users/navarrra/Documents/GitHub/Portfolio/portfolio_photos/projects_background.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.proj_title{
+  padding-top:1.7em;
+  color: white;
+}
+
+.projects_display{
+  display: flex;
+  flex-flow: row wrap;
+  padding: 70px 5% 5% 5%;
+  justify-content: center;
+}
+
+.proj{
+  width: 140px;
+  height: 140px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 2%;
+}
+
+/**************************
+        Contact
+**************************/
+
+.contact{
+  background-color: grey;
+  position: relative;
+  width: 100%;
+  height:800px;
+  background-image: url("C:/Users/navarrra/Documents/GitHub/Portfolio/portfolio_photos/contact_background.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -1.2em;
+  background-position: center;
+}
+
+.contact_header{
+  padding-top: 1em;
+}
+
+.info{
+  padding: 1.5em;
+  background-color: rgba(242, 242, 242, 0.3);
+  margin: 0 3em 0 .5em;
+}
+
+@media only screen and (min-width: 500px) {
+
+  /****************************
+          Home
+  ****************************/
+  .home{
+    height: 400px;
+
+  }
+
+  .title{
+    padding-top: 1.5em;
+    font-size: 55px;
+    margin-top: 0;
+  }
+
+  .subtitle{
+    font-size: 36px;
+  }
+
+  .navbtn{
+    margin-top: 1.7em;
+  }
+
+
+/****************************
+        About
+****************************/
+    .about{
+      margin-top: -2em;
+    }
+
+
+
+}
+
+@media only screen and (min-width: 768px) {
+  .home{
+    height: 650px;
+    background-size: cover;
+    /* margin-top: -.1em;   */
+  }
+
+  .title{
+    padding-top: 3em;
+    font-size: 65px;
+    margin-top: 0;
+  }
+
+  .subtitle{
+    font-size: 56px;
+  }
+
+  .header_title{
+    font-size: 48px;
+    margin-top: 0;
+  }
+  .projects{
+    height: 1300px;
+  }
+
+  .contact{
+    height: 1200px;
+  }
+
+  .contactinfo{
+    font-size: 32px;
+  }
+
+  .info{
+    padding-left: 100px;
+    margin: 1em;
+  }
+
+}
+
+@media only screen and (min-width: 1023px) {
+
+   .home{
+     background-size: cover;
+     height: 1000px;
+     background-position: right;
+   }
+
+   .title{
+     padding-top: 4em;
+     font-size: 75px;
+   }
+
+   .subtitle{
+     font-size: 66px;
+   }
+
+   .about{
+     height: 900px;
+   }
+
+   .aboutcont{
+     display: flex;
+     flex-direction: row;
+   }
+
+   p.aboutinfo{
+     font-size: 30px;
+     margin: 20px 5em 20px 7%;
+     width: 30em;
+   }
+
+   .aboutgal{
+     flex-direction: column;
+   }
+
+   .aboutimg{
+     width: 180px;
+     height: 180px;
+
+   }
+
+   .header_title{
+     margin-top:0;
+   }
+}
+
+/* media queries for full size page*/
+
+
+/* ul.nav li{
+  display: inline-block;
+  color: white;
+
+}
+
+ul.nav{
+  margin-left: 10em;
+}
+
+.nav li a{
+  color: white;
+  text-decoration: none;
+} */
