@@ -21,6 +21,7 @@ html{
   text-align: center;
   color: white;
   padding-top: 3em;
+  display: none;
 }
 
 .subtitle{
@@ -32,6 +33,7 @@ html{
   margin-left:3em;
   margin-right:3em;
   background-color: rgba(242, 242, 242, 0.3);
+  display: none;
 }
 
 
@@ -323,6 +325,7 @@ p.aboutinfo{
      border-bottom: solid red;
      padding-right:1em;
      padding-left: 0;
+     right: -100%;
    }
 
    .nav li a{
