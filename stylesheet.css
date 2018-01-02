@@ -64,6 +64,36 @@ ul.nav{
 }
 
 /**************************
+        Mobile menu
+**************************/
+
+.mobmenu{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top:0;
+  background-color: rgba(0,0,0, 0.8);
+  z-index: 100;
+}
+
+  .slidemenu{
+    color: white;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    list-style: none;
+    text-align: center;
+    padding-left:0;
+    font-size: 36px;
+    margin-top: 2.5em;
+  }
+
+  ul.slidemenu > li{
+    padding-top: 1em;
+  }
+
+
+/**************************
         About
 **************************/
 
@@ -309,6 +339,11 @@ p.aboutinfo{
    .header_title{
      margin-top:0;
    }
+
+   .navbtn{
+     visibility: hidden;
+   }
+
    ul.nav li{
      display: inline-block;
      color: white;
@@ -334,7 +369,7 @@ p.aboutinfo{
      font-size: 30px;
 }
 
-.nav li a:hover{
+  .nav li a:hover{
   color:red;
 }
 
