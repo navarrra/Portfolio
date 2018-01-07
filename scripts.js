@@ -20,4 +20,14 @@ $(document).ready(function(){
   });
 
 
+  //click menu button
+  $(".navbtn").click(function(){
+    $(".mobmenu").animate({width: "100%"});
+      $(".slidemenu, #close").fadeIn();
+  });
+  //click close button
+  $("#close").click(function(){
+        $(".mobmenu").animate({width: "0%"});
+        $(".slidemenu, #close").fadeOut();
+  });
 });

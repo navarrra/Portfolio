@@ -1,6 +1,7 @@
 html{
   background-color: #f7f7f7;
 }
+
 /**************************
         Home Page
 **************************/
@@ -51,6 +52,7 @@ html{
   margin:.5em;
   position:fixed;
   z-index: 2;
+  overflow-y: hidden;
 }
 
  .nav li a{
@@ -70,10 +72,12 @@ ul.nav{
 .mobmenu{
   position: fixed;
   height: 100%;
-  width: 100%;
+  width: 0;
   top:0;
+  /* left:-100%; */
   background-color: rgba(0,0,0, 0.8);
   z-index: 100;
+
 }
 
   .slidemenu{
@@ -86,11 +90,24 @@ ul.nav{
     padding-left:0;
     font-size: 36px;
     margin-top: 2.5em;
+    display: none;
   }
 
   ul.slidemenu > li{
     padding-top: 1em;
   }
+
+  #close{
+    width: 50px;
+    height:50px;
+    text-align:right;
+    background-image: url("C:/Users/navarrra/Documents/GitHub/Portfolio/portfolio_photos/close.png");
+    background-size:cover;
+    background-color: transparent;
+    border: none;
+    margin: .5em;
+    display:none;
+    }
 
 
 /**************************
@@ -180,6 +197,48 @@ p.aboutinfo{
   padding: 2%;
 }
 
+.project1{
+  background-image: url("file:///C:/Users/navarrra/Documents/GitHub/Portfolio/portfolio_photos/cloud_sun.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.project2, .project3, .project4{
+  display: none;
+}
+
+.weatherBox{
+  color: white;
+  text-align: center;
+  margin-top: -2em;
+  font-family: 'Pacifico', cursive;
+}
+
+.boxoverlay{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top:0;
+  /* left:-100%; */
+  background-color: rgba(0,0,0, 0.9);
+  z-index: 100;
+}
+
+.boxoverlay > h2 {
+  color: white;
+  font-size: 48px;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+}
+
+.overlaypic{
+  text-align: center;
+  width: 10%;
+  display: block;
+  border-radius: 10px;
+  margin: auto;
+}
+
 /**************************
         Contact
 **************************/
@@ -249,7 +308,7 @@ p.aboutinfo{
 @media only screen and (min-width: 768px) {
   .home{
     height: 650px;
-    background-size: cover;
+    background-size: contain ;
     /* margin-top: -.1em;   */
   }
 
@@ -373,20 +432,12 @@ p.aboutinfo{
   color:red;
 }
 
-/* media queries for full size page*/
-
-
-/* ul.nav li{
-  display: inline-block;
-  color: white;
-
+.proj{
+  width: 250px;
+  height:250px;
 }
 
-ul.nav{
-  margin-left: 10em;
+.weatherBox{
+  font-size: 38px;
+  margin-top: -2em;
 }
-
-.nav li a{
-  color: white;
-  text-decoration: none;
-} */
