@@ -30,4 +30,14 @@ $(document).ready(function(){
         $(".mobmenu").animate({width: "0%"});
         $(".slidemenu, #close").fadeOut();
   });
+
+
+  //clickbox button for overlay
+  $(".project1").click(function(){
+    $(".boxoverlay, #close").fadeIn();
+
+   });
+
+  
+
 });
