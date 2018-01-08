@@ -26,7 +26,7 @@ $(document).ready(function(){
       $(".slidemenu, #close").fadeIn();
   });
   //click close button
-  $("#close").click(function(){
+  $("#close, a").click(function(){
         $(".mobmenu").animate({width: "0%"});
         $(".slidemenu, #close").fadeOut();
   });
@@ -35,9 +35,11 @@ $(document).ready(function(){
   //clickbox button for overlay
   $(".project1").click(function(){
     $(".boxoverlay, #close").fadeIn();
-
    });
+  $("button#close").click(function(){
+    console.log("hello")
+    $(".boxoverlay, #close").fadeOut();
+  });
 
-  
 
 });

@@ -55,7 +55,7 @@ html{
   overflow-y: hidden;
 }
 
- .nav li a{
+ .nav li a, li a{
   color: white;
   text-decoration: none;
 }
@@ -240,6 +240,13 @@ p.aboutinfo{
   margin: auto;
 }
 
+.appdes{
+  color: white;
+  margin:1.5em;
+  font-size: 25px;
+  text-align: center;
+}
+
 /**************************
         Contact
 **************************/
@@ -349,6 +356,11 @@ p.aboutinfo{
     height: 150px;
   }
 
+  .appdes{
+    margin: 5em;
+    font-size: 30px;
+  }
+
 }
 
 @media only screen and (min-width: 1023px) {
@@ -429,16 +441,21 @@ p.aboutinfo{
      font-size: 30px;
 }
 
-  .nav li a:hover{
-  color:red;
-}
+    .nav li a:hover{
+    color:red;
+  }
 
-.proj{
-  width: 250px;
-  height:250px;
-}
+    .proj{
+      width: 250px;
+      height:250px;
+    }
 
-.weatherBox{
-  font-size: 38px;
-  margin-top: -2em;
+    .weatherBox{
+      font-size: 38px;
+      margin-top: -2em;
+    }
+
+    .appdes{
+      margin: 2em 10em;
+    }
 }
